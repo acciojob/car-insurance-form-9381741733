@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    
+    <form method="POST">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="Text" id="name" name="name" required>
+        <br><br>
 
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="Email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Gender Field -->
+        <label>Gender:</label>
+        <input type="Radio" id="gender_male" name="gender" value="Male" required>
+        <label for="gender_male">Male</label>
+        <input type="Radio" id="gender_female" name="gender" value="Female" required>
+        <label for="gender_female">Female</label>
+        <input type="Radio" id="gender_other" name="gender" value="Other" required>
+        <label for="gender_other">Other</label>
+        <br><br>
+
+        <!-- Car Brands Field -->
+        <label for="cars">Car Brands:</label>
+        <select id="cars" name="cars">
+            <option value="">--Select a brand--</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+        <br><br>
+
+        <!-- Car Age Field -->
+        <label for="carage">Car Age:</label>
+        <input type="Number" id="carage" name="carage" required>
+        <br><br>
+
+        <!-- Date of Purchase Field -->
+        <label for="dop">Date of Purchase:</label>
+        <input type="Date" id="dop" name="dop" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="Password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
 </body>
-
 </html>
